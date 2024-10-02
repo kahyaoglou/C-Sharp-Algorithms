@@ -54,24 +54,32 @@ class Program
 
             case 3:
                 Console.WriteLine("Sorting Algorithms:");
-                Console.WriteLine("1. Bubble Sort");
+                Console.WriteLine("1. Selection Sort");
                 Console.WriteLine("2. Insertion Sort");
-                Console.WriteLine("3. Merge Sort");
-                Console.WriteLine("4. Quick Sort");
+                Console.WriteLine("3. Bubble Sort");
+                Console.WriteLine("4. Shell Sort");
+                Console.WriteLine("5. Merge Sort");
+                Console.WriteLine("6. Quick Sort");
 
                 int sortChoice = Convert.ToInt32(Console.ReadLine());
                 switch (sortChoice)
                 {
                     case 1:
-                        SortingAlgorithms.BubbleSort.Algorithm();
+                        SortingAlgorithms.SelectionSort.Algorithm();
                         break;
                     case 2:
                         SortingAlgorithms.InsertionSort.Algorithm();
                         break;
                     case 3:
-                        SortingAlgorithms.MergeSort.Algorithm();
+                        SortingAlgorithms.BubbleSort.Algorithm();
                         break;
                     case 4:
+                        SortingAlgorithms.QuickSort.Algorithm();
+                        break;
+                    case 5:
+                        SortingAlgorithms.MergeSort.Algorithm();
+                        break;
+                    case 6:
                         SortingAlgorithms.QuickSort.Algorithm();
                         break;
                     default:
