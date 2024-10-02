@@ -61,10 +61,10 @@ class Program
                 switch (sortChoice)
                 {
                     case 1:
-                        SortingAlgorithms.BubbleSort.Algorithm();
+                        
                         break;
                     case 2:
-                        SortingAlgorithms.InsertionSort.Algorithm();
+                        
                         break;
                     default:
                         Console.WriteLine("Geçersiz seçim, lütfen üstteki seçeneklerden birini seçiniz...");
