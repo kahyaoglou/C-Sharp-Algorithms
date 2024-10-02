@@ -42,7 +42,7 @@
             }
 
             Console.WriteLine("Sorted Array: ");
-            Console.WriteLine(A);  
+            Display(A); 
             Console.ReadKey();
         }
 
