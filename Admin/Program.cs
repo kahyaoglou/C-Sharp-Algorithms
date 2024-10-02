@@ -74,7 +74,7 @@ class Program
                         SortingAlgorithms.BubbleSort.Algorithm();
                         break;
                     case 4:
-                        SortingAlgorithms.QuickSort.Algorithm();
+                        SortingAlgorithms.ShellSort.Algorithm();
                         break;
                     case 5:
                         SortingAlgorithms.MergeSort.Algorithm();
