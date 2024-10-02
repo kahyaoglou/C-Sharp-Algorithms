@@ -10,6 +10,7 @@
   <ItemGroup>
     <ProjectReference Include="..\BasicAlgorithms\BasicAlgorithms.csproj" />
     <ProjectReference Include="..\IntermediateAlgorithms\IntermediateAlgorithms.csproj" />
+    <ProjectReference Include="..\SearchAlgorithms\SearchAlgorithms.csproj" />
     <ProjectReference Include="..\SortingAlgorithms\SortingAlgorithms.csproj" />
   </ItemGroup>
 
