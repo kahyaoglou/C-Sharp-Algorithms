@@ -151,16 +151,23 @@ class Program
         {
             Console.WriteLine("Searching Algorithms");
             Console.WriteLine("1. Binary Search Algorithm");
+            Console.WriteLine("2. Linear Search Algorithm");
+            Console.WriteLine("3. Geri");
 
             int searchChoice = Convert.ToInt32(Console.ReadLine());
-            if (searchChoice == 1)
+            switch (searchChoice)
             {
-                SearchAlgorithms.BinarySearch.Algorithm();
-            }
-            else
-            {
-                Console.WriteLine("Geçersiz seçim, lütfen üstteki seçeneklerden birini seçiniz...");
-                continue;
+                case 1:
+                    SearchAlgorithms.BinarySearch.Algorithm();
+                    break;
+                case 2:
+                    SearchAlgorithms.LinearSearch.Algorithm();
+                    break;
+                case 3:
+                    return;
+                default:
+                    Console.WriteLine("Geçersiz seçim, lütfen üstteki seçeneklerden birini seçiniz...");
+                    continue;
             }
 
             if (!AskToTryAgain())
