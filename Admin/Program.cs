@@ -57,6 +57,7 @@ class Program
                 Console.WriteLine("1. Bubble Sort");
                 Console.WriteLine("2. Insertion Sort");
                 Console.WriteLine("3. Merge Sort");
+                Console.WriteLine("4. Quick Sort");
 
                 int sortChoice = Convert.ToInt32(Console.ReadLine());
                 switch (sortChoice)
@@ -69,6 +70,9 @@ class Program
                         break;
                     case 3:
                         SortingAlgorithms.MergeSort.Algorithm();
+                        break;
+                    case 4:
+                        SortingAlgorithms.QuickSort.Algorithm();
                         break;
                     default:
                         Console.WriteLine("Geçersiz seçim, lütfen üstteki seçeneklerden birini seçiniz...");
