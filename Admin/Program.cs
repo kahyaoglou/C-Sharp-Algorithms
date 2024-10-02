@@ -55,7 +55,7 @@ class Program
             case 3:
                 Console.WriteLine("Sorting Algorithms:");
                 Console.WriteLine("1. Bubble Sort");
-                Console.WriteLine("1. Insertion Sort");
+                Console.WriteLine("2. Insertion Sort");
 
                 int sortChoice = Convert.ToInt32(Console.ReadLine());
                 switch (sortChoice)
