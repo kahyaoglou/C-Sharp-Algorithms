@@ -10,6 +10,7 @@ class Program
         Console.WriteLine();
         Console.WriteLine("1. Basic Algorithms");
         Console.WriteLine("2. Intermediate Algorithms");
+        Console.WriteLine("3. Sorting Algorithms");
 
         int mainChoice = Convert.ToInt32(Console.ReadLine());
 
@@ -44,6 +45,22 @@ class Program
                 {
                     case 1:
                         IsPalindrome.IsPalindromeNumber();
+                        break;
+                    default:
+                        Console.WriteLine("Geçersiz seçim, lütfen üstteki seçeneklerden birini seçiniz...");
+                        break;
+                }
+                break;
+
+            case 3:
+                Console.WriteLine("Sorting Algorithms:");
+                Console.WriteLine("1. Bubble Sort");
+
+                int sortChoice = Convert.ToInt32(Console.ReadLine());
+                switch (sortChoice)
+                {
+                    case 1:
+                        SortingAlgorithms.BubbleSort.Algorithm();
                         break;
                     default:
                         Console.WriteLine("Geçersiz seçim, lütfen üstteki seçeneklerden birini seçiniz...");
