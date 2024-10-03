@@ -182,6 +182,9 @@ class Program
                 {
                     Console.WriteLine("Intermediate Algoritmalar:");
                     Console.WriteLine("1. Palindrom Öğrenme");
+                    Console.WriteLine("2. Üçgen Çizme");
+                    Console.WriteLine("3. Ters Üçgen Çizme");
+                    Console.WriteLine("4. Elmas Çizme");
                     Console.WriteLine("0. Geri");
 
                     int intermediateChoice = Convert.ToInt32(Console.ReadLine());
@@ -189,6 +192,18 @@ class Program
                     if (intermediateChoice == 1)
                     {
                         IsPalindrome.IsPalindromeNumber();
+                    }
+                    else if (intermediateChoice == 2)
+                    {
+                        TriangleMaker.Algorithm();
+                    }
+                    else if (intermediateChoice == 3)
+                    {
+                        ReverseTriangleMaker.Algorithm();
+                    }
+                    else if (intermediateChoice == 4)
+                    {
+                        DiamondMaker.Algorithm();
                     }
                     else if (intermediateChoice == 0)
                     {
