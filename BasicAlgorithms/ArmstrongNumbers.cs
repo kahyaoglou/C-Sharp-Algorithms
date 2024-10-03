@@ -8,8 +8,11 @@ namespace BasicAlgorithms
 {
     public class ArmstrongNumbers
     {
-        public static void Algorithm(int number)
+        public static void Algorithm()
         {
+            Console.Write("\nSayıyı Giriniz: ");
+            int number = Convert.ToInt32(Console.ReadLine());
+
             int basamakNumber = 0; // Basamak sayısı
             int tempNumber = number; // Geçici sayı
             int basamakValue; // Basamak değeri
@@ -49,12 +52,6 @@ namespace BasicAlgorithms
             {
                 Console.WriteLine($"{number} sayısı bir Armstrong sayı değildir.\n");
             }
-        }
-
-        public static int ShowMenu()
-        {
-            Console.Write("\nSayıyı Giriniz: ");
-            return Convert.ToInt32(Console.ReadLine());
         }
     }
 }

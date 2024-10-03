@@ -18,22 +18,17 @@
             Console.Write("Aranacak key value nedir? ");
             int key = Convert.ToInt32(Console.ReadLine());
 
-            bool found = LinearSearchAlgorithm(A, key);
-            Console.WriteLine("Sonuç: " + found);
-
-            Console.ReadKey();
-        }
-
-        public static bool LinearSearchAlgorithm(int[] A, int key)
-        {
+            bool found = false;
             for (int index = 0; index < A.Length; index++)
             {
                 if (A[index] == key)
                 {
-                    return true; // Return true if found
+                    found = true;
+                    break;
                 }
             }
-            return false; // Return false if not found
+
+            Console.WriteLine(found ? "true" : "false");
         }
     }
 }
