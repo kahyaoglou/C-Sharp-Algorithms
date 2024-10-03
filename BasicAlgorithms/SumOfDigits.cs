@@ -8,10 +8,8 @@ namespace BasicAlgorithms
 {
     public class SumOfDigits
     {
-        public static void Algorithm()
+        public static void Algorithm(int number)
         {
-            Console.Write("Basamaklarının toplamı hesaplanacak sayıyı giriniz: ");
-            int number = Convert.ToInt32(Console.ReadLine());
             int digitCount = 0; // Basamak sayısı.
             int tempNumber = number; // Geçici sayı.
             int digitValue; // Basamak değeri.
@@ -33,6 +31,13 @@ namespace BasicAlgorithms
             }
 
             Console.WriteLine("Basamak toplamları: " + result);
+        }
+
+        public static int ShowMenu()
+        {
+            Console.Write("Basamaklarının toplamı hesaplanacak sayıyı giriniz: ");
+            int number = Convert.ToInt32(Console.ReadLine());
+            return number;
         }
     }
 }

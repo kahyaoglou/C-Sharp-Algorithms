@@ -2,22 +2,11 @@
 {
     public class SortNumbers
     {
-        public static void Algorithm()
+        public static void Algorithm(int[] numbers)
         {
-            Console.Write("Kaç sayı girmek istiyorsunuz? ");
-            int n = Convert.ToInt32(Console.ReadLine());
-            int[] numbers = new int[n];
-
-            for (int i = 0; i < n; i++)
+            for (int i = 0; i < numbers.Length; i++)
             {
-                Console.Write($"Sayı {i + 1}'i giriniz: ");
-                numbers[i] = Convert.ToInt32(Console.ReadLine());
-            }
-
-            // Sıralama işlemi
-            for (int i = 0; i < n; i++)
-            {
-                for (int j = i + 1; j < n; j++)
+                for (int j = i + 1; j < numbers.Length; j++)
                 {
                     if (numbers[i] < numbers[j])
                     {
@@ -31,5 +20,19 @@
             Console.WriteLine("Sıralama: " + string.Join(" > ", numbers));
         }
 
+        public static int[] ShowMenu()
+        {
+            Console.Write("Kaç sayı girmek istiyorsunuz? ");
+            int n = Convert.ToInt32(Console.ReadLine());
+            int[] numbers = new int[n];
+
+            for (int i = 0; i < n; i++)
+            {
+                Console.Write($"Sayı {i + 1}'i giriniz: ");
+                numbers[i] = Convert.ToInt32(Console.ReadLine());
+            }
+
+            return numbers;
+        }
     }
 }
