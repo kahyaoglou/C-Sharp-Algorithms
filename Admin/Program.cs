@@ -190,6 +190,7 @@ class Program
                     Console.WriteLine("2. Üçgen Çizme");
                     Console.WriteLine("3. Ters Üçgen Çizme");
                     Console.WriteLine("4. Elmas Çizme");
+                    Console.WriteLine("5. Palindrom Olma İhtimalini Öğrenme");
                     Console.WriteLine("0. Geri");
 
                     int intermediateChoice = Convert.ToInt32(Console.ReadLine());
@@ -209,6 +210,10 @@ class Program
                     else if (intermediateChoice == 4)
                     {
                         DiamondMaker.Algorithm();
+                    }
+                    else if (intermediateChoice == 5)
+                    {
+                        Palindromable.Algorithm();
                     }
                     else if (intermediateChoice == 0)
                     {
