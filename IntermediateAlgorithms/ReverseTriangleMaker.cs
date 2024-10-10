@@ -4,13 +4,13 @@
     {
         public static void Algorithm()
         {
-            Console.Write("Enter the number of digits: ");
-            int n = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Üçgenin Kat Sayısını Giriniz: ");
+            int katSayisi = Convert.ToInt32(Console.ReadLine());
             int a, b;
 
-            for (a = n; a >= 1; a--)
+            for (a = katSayisi; a >= 1; a--)
             {
-                for (b = 1; b <= (n - a); b++)
+                for (b = 1; b <= (katSayisi - a); b++)
                 {
                     Console.Write(" ");
                 }

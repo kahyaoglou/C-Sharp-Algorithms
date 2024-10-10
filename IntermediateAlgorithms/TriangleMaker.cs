@@ -10,12 +10,12 @@ namespace IntermediateAlgorithms
     {
         public static void Algorithm()
         {
-            Console.Write("Enter the number of digits: ");
-            int n = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Üçgenin Kat Sayısını Giriniz: ");
+            int katSayisi = Convert.ToInt32(Console.ReadLine());
 
-            for (int i = 1; i <= n; i++)
+            for (int i = 1; i <= katSayisi; i++)
             {
-                for (int k = 1; k <= (n - i); k++)
+                for (int k = 1; k <= (katSayisi - i); k++)
                 {
                     Console.Write(" ");
                 }
