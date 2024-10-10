@@ -35,6 +35,7 @@ class Program
                     Console.WriteLine("10. Basamak Değeri Hesaplama");
                     Console.WriteLine("11. Armstrong Sayıları Hesaplama");
                     Console.WriteLine("12. Mükemmel Sayıları Hesaplama");
+                    Console.WriteLine("13. Fibonacci Serisi Sıralama");
                     Console.WriteLine("0.  Geri");
 
                     int basicChoice = Convert.ToInt32(Console.ReadLine());
@@ -165,6 +166,10 @@ class Program
                     else if (basicChoice == 12)
                     {
                         PerfectNumbers.Algorithm();
+                    }
+                    else if(basicChoice == 13)
+                    {
+                        FibonacciSeries.Algorithm();
                     }
                     else if (basicChoice == 0)
                     {
