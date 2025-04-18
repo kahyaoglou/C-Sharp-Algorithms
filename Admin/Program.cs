@@ -1,5 +1,6 @@
 ﻿using BasicAlgorithms;
 using IntermediateAlgorithms;
+using static System.Net.Mime.MediaTypeNames;
 
 class Program
 {
@@ -39,11 +40,13 @@ class Program
                     Console.WriteLine("0.  Geri");
 
                     int basicChoice = Convert.ToInt32(Console.ReadLine());
+                    
 
                     if (basicChoice == 1)
                     {
-                        ArithmeticOperations arithmeticOperations = new ArithmeticOperations();
-                        arithmeticOperations.ShowMenu();
+                        Console.WriteLine("İlgili işlemi yazınız: ");
+                        string islem = Console.ReadLine();
+                        ArithmeticOperations.Algorithm(islem);
                     }
                     else if (basicChoice == 2)
                     {
